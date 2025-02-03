@@ -2,17 +2,20 @@ import styled from "styled-components";
 import React from "react";
 import "../../styles/newButton.css";
 
-// function NewButton({label, size = "large", onClick}) {
-// 	return (
-// 		<NewButtonStyle size={size} onClick={onClick}>
-// 			<p>{label}</p>
-// 		</NewButtonStyle>
-// 	);
-// }
-
-export const NewButton = ({label, size = "small", onClick}) => {
+export const NewButton = ({
+	primary = true,
+	backgroundColor = null,
+	label,
+	size,
+	onClick,
+}) => {
+	const mode = primary ? "word-button--primary" : "word-button--secondary";
 	return (
-		<button className={["word-button", "word-button--primary"]}>
+		<button
+			type="button"
+			className={["word-button", `word-button--${size}`, mode].join(" ")}
+			style={backgroundColor && {backgroundColor}}
+		>
 			{label}
 		</button>
 	);

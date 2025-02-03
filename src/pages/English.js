@@ -33,7 +33,7 @@ const English = () => {
 			<p>{data.engSenList}</p>
 
 			{data.engSenList.map((value, index) => (
-				<NewButton key={index} label={value} />
+				<NewButton size="large" key={index} label={value} />
 			))}
 		</div>
 	);
