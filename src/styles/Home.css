@@ -48,7 +48,7 @@ body {
 	font-size: 1.25rem;
 	line-height: 1.6;
 	color: #6e6e73;
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */
 }
 
 /* Start Button */
@@ -61,7 +61,9 @@ body {
 	font-weight: 500;
 	border-radius: 12px;
 	cursor: pointer;
-	transition: background-color 0.2s ease, transform 0.1s ease;
+	transition:
+		background-color 0.2s ease,
+		transform 0.1s ease;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
